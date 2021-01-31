@@ -14,6 +14,19 @@ Adding Extra is Possible if you want to explore more ...
 Good Luck !!! 
 */
 
+var href = location.href;
+var protocol = location.protocol;
+var host = location.host;
+var port = location.port;
+var hostname = location.hostname;
+var appname = navigator.appName;
+var appversion = navigator.appVersion;
+var platform = navigator.platform;
+var language = navigator.language;
+var cookieenabled = navigator.cookieEnabled;
+var height = screen.availHeight;
+var width = screen.width;
+var pixeldepth = screen.pixelDepth;
 
 
 
