@@ -13,7 +13,7 @@ form.addEventListener('submit', addNewTask);
 
 clearBtn.addEventListener('click', clearAllTasks);
 
-filter.addEventListener('keyup', filterTasks);
+filter.addEventListener('click', filterTasks);
 
 taskList.addEventListener('click', removeTask);
  
@@ -74,7 +74,8 @@ function clearAllTasks() {
 
 
 function filterTasks(e) {
-
+    var search_item=document.getElementById("searchinput").value;
+    document.getElementById("searchresult").innerHTML=search_item;
     /*  
     Instruction for Handling the Search/filter 
     

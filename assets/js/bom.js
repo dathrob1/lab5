@@ -16,7 +16,7 @@ Good Luck !!!
 
 
 
- 
+const answerall = document.querySelector('#answer_all')
 const href = document.querySelector('#href')
 const protocol = document.querySelector('#protocol')
 const host = document.querySelector('#host')
@@ -47,6 +47,22 @@ width.addEventListener('click', widthfinder);
 pixeldepth.addEventListener('click', pixeldepthfinder);
 length.addEventListener('click', lengthfinder);
 state.addEventListener('click', statefinder);
+answerall.addEventListener('click',() => {    
+    hreffinder();
+    protocolfinder();    
+    hostfinder();
+    portfinder();
+    hostnamefinder();
+    appnamefinder();
+    appversionfinder();
+    platformfinder();
+    languagefinder();
+    cookieenabledfinder();
+    heightfinder();
+    widthfinder();
+    lengthfinder();
+    statefinder();
+});
 
 
 
