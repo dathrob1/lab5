@@ -23,33 +23,33 @@ reloadIcon.addEventListener('click', reloadPage);
 
 
 
-// Add New  Task Function definition 
+
 function addNewTask(e) {
 
-    e.preventDefault(); //disable form submission
+    e.preventDefault(); 
 
 
-    // Check empty entry
+   
     if (taskInput.value === '') {
         taskInput.style.borderColor = "red";
 
         return;
     }
 
-    // Create an li element when the user adds a task 
+    
     const li = document.createElement('li');
-    // Adding a class
+   
     li.className = 'collection-item';
-    // Create text node and append it 
+    
     li.appendChild(document.createTextNode(taskInput.value));
-    // Create new element for the link 
+   
     const link = document.createElement('a');
-    // Add class and the x marker for a 
+   
     link.className = 'delete-item secondary-content';
     link.innerHTML = '<i class="fa fa-remove"></i>';
-    // Append link to li
+   
     li.appendChild(link);
-    // Append to UL 
+    
     taskList.appendChild(li);
 
 
@@ -61,13 +61,9 @@ function addNewTask(e) {
 
 
 
-// Clear Task Function definition 
+ 
 function clearAllTasks() {
 
-    //This is the first way 
-    // taskList.innerHTML = '';
-
-    //  Second Wy 
     while (taskList.firstChild) {
         taskList.removeChild(taskList.firstChild);
     }
@@ -76,7 +72,7 @@ function clearAllTasks() {
 
 
 
-// Filter tasks function definition 
+
 function filterTasks(e) {
 
     /*  
@@ -106,8 +102,7 @@ function removeTask(e) {
 }
 
 
-// Reload Page Function 
 function reloadPage() {
-    //using the reload fun on location object 
+   
     location.reload();
 }
