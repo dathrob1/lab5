@@ -74,8 +74,10 @@ function clearAllTasks() {
 
 
 function filterTasks(e) {
+   
     var search_item=document.getElementById("searchinput").value;
-    document.getElementById("searchresult").innerHTML=search_item;
+    var arraylist = document.querySelectorAll("li.collection-item");
+    console.log(arraylist)
     /*  
     Instruction for Handling the Search/filter 
     
