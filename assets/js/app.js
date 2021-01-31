@@ -78,6 +78,21 @@ function filterTasks(e) {
     var search_item=document.getElementById("searchinput").value;
     var arraylist = document.querySelectorAll("li.collection-item");
     console.log(arraylist)
+    for (let i = 0; i < arraylist.length; i++) {
+        let item = arraylist[i];
+        let p = item.textContent;
+        if(p==search_item) 
+        {
+            
+            dis = document.getElementById("searchresult");
+            dis.style.display = "block";
+            dis.innerHTML=p;
+
+        }
+        else{
+
+        }
+      }
     /*  
     Instruction for Handling the Search/filter 
     
